@@ -4,8 +4,8 @@ Repositorio del manual de buenas prácticas para la realización de trabajos uni
 
 ## Integrantes
 
-- Daniel Cabrita – Ingeniero en Computación
-- Marco Rivero – Ingeniero en Computación
+- Daniel Cabrita C.I.: 31.814.450
+- Marco Rivero C.I.: 31.732.231
 
 ## Objetivo del proyecto
 
