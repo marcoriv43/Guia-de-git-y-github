@@ -274,3 +274,39 @@ Cada vez que se modifique un proyecto o se cree uno nuevo, se debe repetir el fl
 - Ejecutar `git push`
 
 ---
+
+## Estructura recomendada del repositorio
+
+Un repositorio bien estructurado ayuda a que el proyecto sea fácil de entender y de mantener. La organización del repositorio debe ser simple, pero suficiente para contener todo lo necesario sin generar confusión.
+
+### Estructura usada en este proyecto
+
+- README.md
+- MANUAL.md
+- CHANGELOG.md
+- /documentos
+- /imagenes
+- /referencias
+- /plantillas
+
+### Función de cada carpeta o archivo
+
+- README.md: explica el proyecto, su objetivo y cómo contribuir.
+- MANUAL.md: contiene el contenido principal del manual.
+- CHANGELOG.md: registra cambios importantes por versión.
+- /documentos: puede guardar PDF, borradores o archivos de trabajo.
+- /imagenes: almacena imágenes o recursos visuales.
+- /referencias: reúne materiales bibliográficos o fuentes complementarias.
+- /plantillas: puede contener modelos de portada, formato o estructura.
+
+### Buenas prácticas de organización
+
+- Usar nombres claros y consistentes.
+- No mezclar archivos temporales con archivos finales.
+- Mantener el repositorio limpio y fácil de navegar.
+- Evitar duplicar documentos innecesariamente.
+- Explicar en el README cómo está organizado el proyecto.
+
+Se busca una estructura clara que facilite el trabajo del equipo y también haga que el repositorio luzca más profesional ante cualquier revisión externa.
+
+---
