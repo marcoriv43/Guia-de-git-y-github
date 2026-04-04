@@ -274,3 +274,136 @@ Cada vez que se modifique un proyecto o se cree uno nuevo, se debe repetir el fl
 - Ejecutar `git push`
 
 ---
+
+## Estructura recomendada del repositorio
+
+Un repositorio bien estructurado ayuda a que el proyecto sea fácil de entender y de mantener. La organización del repositorio debe ser simple, pero suficiente para contener todo lo necesario sin generar confusión.
+
+### Estructura usada en este proyecto
+
+- README.md
+- MANUAL.md
+- CHANGELOG.md
+- /documentos
+- /imagenes
+- /referencias
+- /plantillas
+
+### Función de cada carpeta o archivo
+
+- README.md: explica el proyecto, su objetivo y cómo contribuir.
+- MANUAL.md: contiene el contenido principal del manual.
+- CHANGELOG.md: registra cambios importantes por versión.
+- /documentos: puede guardar PDF, borradores o archivos de trabajo.
+- /imagenes: almacena imágenes o recursos visuales.
+- /referencias: reúne materiales bibliográficos o fuentes complementarias.
+- /plantillas: puede contener modelos de portada, formato o estructura.
+
+### Buenas prácticas de organización
+
+- Usar nombres claros y consistentes.
+- No mezclar archivos temporales con archivos finales.
+- Mantener el repositorio limpio y fácil de navegar.
+- Evitar duplicar documentos innecesariamente.
+- Explicar en el README cómo está organizado el proyecto.
+
+Se busca una estructura clara que facilite el trabajo del equipo y también haga que el repositorio luzca más profesional ante cualquier revisión externa.
+
+---
+
+## Uso de ramas
+
+Las ramas permiten trabajar en distintas partes del proyecto sin alterar directamente la versión principal. Son una de las características más importantes de Git, especialmente cuando varias personas colaboran al mismo tiempo.
+
+### Para qué sirven las ramas
+
+Una rama permite que un integrante trabaje en una copia paralela del proyecto mientras la rama principal se mantiene estable. Cuando el trabajo está listo, puede integrarse al documento principal mediante revisión.
+
+Esto ofrece varias ventajas:
+
+- Evita que los cambios de una persona afecten directamente el trabajo de otra.
+- Permite revisar antes de mezclar el contenido.
+- Reduce el riesgo de errores en la versión principal.
+- Facilita la organización por secciones o responsabilidades.
+
+### Estrategia simple para este proyecto
+
+Como el grupo es pequeño, no hace falta crear demasiadas ramas. Una estrategia práctica podría ser:
+
+- main: versión principal y estable.
+- daniel/docs: rama de trabajo general de Daniel.
+- marco/docs: rama de trabajo general de Marco.
+- release/v1.0: rama temporal para la versión final, si fuera necesario.
+
+Con esta estructura se mantiene una buena práctica sin complicar innecesariamente el proyecto.
+
+### Recomendaciones al usar ramas
+
+- Crear ramas con nombres descriptivos.
+- No trabajar directamente sobre main.
+- Subir los cambios solo cuando estén listos para revisión.
+- Fusionar ramas únicamente después de validar el contenido.
+- Eliminar las ramas que ya no se utilicen.
+
+### ¿Cómo crear y moverme por las ramas?
+
+1. Antes de crear una rama debemos asegurarnos de estar en la rama principal `main` y de tener los últimos cambios:
+
+```bash
+git checkout main
+git pull origin main
+```
+
+2. Creamos una rama nueva:
+
+```bash
+git checkout -b nombre-de-la-rama
+```
+
+3. Subimos la rama creada al repositorio:
+
+```bash
+git push -u origin daniel/docs
+```
+
+---
+
+## Uso de issues
+
+Los issues son una forma muy clara de organizar tareas dentro del repositorio. En un trabajo universitario, pueden usarse para controlar secciones pendientes, correcciones, dudas o mejoras.
+
+### Qué registrar en un issue
+
+Un issue puede contener:
+
+- El nombre de una tarea.
+- Una descripción breve.
+- Un responsable.
+- Una lista de verificación.
+- Comentarios sobre avances o problemas.
+
+### Ejemplos de uso
+
+- Crear un issue para redactar la introducción.
+- Abrir un issue para revisar la bibliografía.
+- Registrar un issue para corregir formato.
+- Crear un issue para preparar la versión final del PDF.
+
+### Buenas prácticas
+
+- Escribir títulos cortos y claros.
+- No mezclar demasiadas tareas en un solo issue si no están relacionadas.
+- Cerrar el issue cuando la tarea haya sido resuelta.
+- Usar comentarios para registrar decisiones importantes.
+
+Los issues ayudan a que el proyecto no dependa solo de la memoria del grupo, sino de una organización visible y documentada.
+
+### ¿Cómo crear un issue?
+
+1. Entrar al repositorio de GitHub y dirigirse a la sección “Issues”.
+2. Hacer clic en “New issue”.
+3. Colocar el título del issue y en la descripción indicar qué tarea se debe completar.
+4. Crear el issue.
+5. Marcarlo como completado cuando la tarea haya sido finalizada.
+
+---
