@@ -1,4 +1,4 @@
-# Manual de buenas prácticas para trabajos universitarios en grupo
+# Manual de buenas prácticas para trabajos universitarios en grupo con Git y GitHub
 
 Repositorio del manual de buenas prácticas para la realización de trabajos universitarios en equipo, gestionado con Git y GitHub.
 
