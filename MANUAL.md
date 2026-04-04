@@ -180,3 +180,97 @@ Algunas ventajas de este tipo de herramientas son:
 En este proyecto, GitHub también cumple esa función organizativa, ya que permite gestionar tareas mediante issues, tableros y ramas de trabajo.
 
 ---
+
+## ¿Por qué usar Git y GitHub en trabajos universitarios?
+
+Git y GitHub no son herramientas exclusivas para programadores. También pueden usarse de forma muy efectiva para trabajos escritos, informes, manuales, investigaciones y cualquier proyecto documental que requiera orden y seguimiento. Su principal ventaja es que permiten llevar un control de versiones y organizar el trabajo colaborativo de manera profesional.
+
+### ¿Qué es Git?
+
+Es un sistema de control de versiones, es distribuido, es decir que múltiples personas pueden trabajar en equipo, es open source y también se adapta a todo tipo de proyectos desde pequeños hasta grandes, además, se pueden fusionar archivos, guarda una línea de tiempo a lo largo de todo el proyecto. Maneja una interfaz tipo Bash. GIT, es el software de control de versiones en el que se basa GitHub.
+
+### ¿Qué es GitHub?
+
+A diferencia de Git, GitHub es un sitio web y un servicio en la nube que ayuda a los desarrolladores a almacenar y administrar su código, al igual que llevar un registro y control de cualquier cambio sobre este código. En otras palabras, es una plataforma de desarrollo colaborativo, o también llamada la red social de los desarrolladores donde se alojan los repositorios, el código se almacena de forma pública pero se puede hacer privado con una cuenta de pago.
+
+La interfaz de GitHub Desktop es bastante fácil de usar para el desarrollador novato que quiera aprovechar las ventajas del Git. Sin GitHub Desktop, usar un Git generalmente requiere de un poco más de conocimientos de tecnología y uso de una línea de comando (Bash).
+
+### Ventajas principales
+
+Usar Git y GitHub en trabajos universitarios aporta varios beneficios:
+
+- Se conserva un historial de cambios.
+- Se puede volver a una versión anterior si ocurre un error.
+- Cada integrante puede trabajar en su propia parte sin interferir con los demás.
+- El documento principal se mantiene más ordenado.
+- Se mejora la revisión del trabajo antes de su integración final.
+- El grupo demuestra un manejo más profesional del proyecto.
+
+En vez de tener archivos como “trabajo_final”, “trabajo_final_ahora_si”, “trabajo_final_bueno” o “definitivo_ultimo”, el equipo puede trabajar con un sistema más limpio y estructurado.
+
+### Aplicación en documentos académicos
+
+Aunque Git nació en el contexto del desarrollo de software, su lógica encaja muy bien con los documentos académicos. Cada cambio queda registrado, cada integrante puede trabajar por separado y luego integrar sus aportes mediante revisión. Esto permite manejar el manual como un proyecto real, con control de avances, correcciones y versiones.
+
+### Valor formativo
+
+Aprender a usar Git y GitHub en la universidad no solo ayuda a entregar un mejor documento. También desarrolla habilidades útiles para la vida profesional, como la organización, la trazabilidad de cambios, la revisión colaborativa y el trabajo responsable con versiones compartidas.
+
+---
+
+## ¿Cómo crear un repositorio?
+
+### Creación de una cuenta
+
+Lo primero que necesitas es una cuenta de usuario gratuita. Simplemente visita https://github.com, elige un nombre de usuario que no esté ya en uso, proporciona un correo y una contraseña, y pulsa el botón verde grande “Sign up for GitHub”.
+
+### Crear un repositorio
+
+Un repositorio se usa generalmente para organizar un solo proyecto. Los repositorios pueden contener carpetas y archivos, imágenes, videos, hojas de cálculo y conjuntos de datos, cualquier cosa que su proyecto necesite. Recomendamos incluir un archivo README o un archivo con información sobre su proyecto. GitHub facilita agregar uno al mismo tiempo que crea su nuevo repositorio. También ofrece otras opciones comunes, como un archivo de licencia.
+
+### Paso 1. Crear un nuevo repositorio
+
+1. En la esquina superior derecha, junto a tu avatar o icono de identidad, haz clic en (+) y luego selecciona Nuevo repositorio.
+2. Nombra tu repositorio.
+3. Escribe una breve descripción.
+4. Haz clic en Crear repositorio.
+5. Guarda estos valores debido a que luego lo necesitarás para subir tus aplicaciones desde el Bash de Git a este GitHub.
+
+### Paso 2. Subir nuestros proyectos a GitHub
+
+1. Crear una carpeta en el disco duro C:\ (ruta: C:\prueba) una carpeta donde estarán todos archivos y directorios de nuestro proyecto.
+2. Una vez creada las carpetas de cada clase y luego de haber instalado Git y GitHub Desktop, hacer clic derecho sobre la carpeta del proyecto y luego sobre la opción Git Bash Here.
+3. Escribir la siguiente línea de comando para iniciar el Git en esa carpeta. Esto solo se hace una vez:
+
+```bash
+git init
+```
+
+4. Escribir la siguiente línea de comandos para establecer la configuración de nombre de usuario / correo electrónico específica del repositorio. Esto solo se hace una vez:
+
+```bash
+git config --global user.name "tu nombre de usuario en Github"
+git config --global user.email "tu correo en Github"
+```
+
+5. Para subir cambios nuevos:
+
+```bash
+git add .
+git status
+git commit -m "primer commit"
+git remote add origin https://github.com/usuario/repositorio.git
+git push -u origin main
+```
+
+### IMPORTANTE
+
+Cada vez que se modifique un proyecto o se cree uno nuevo, se debe repetir el flujo de:
+
+- Abrir Git Bash en la carpeta del proyecto.
+- Ejecutar `git add .`
+- Verificar con `git status`
+- Crear el commit con un mensaje claro
+- Ejecutar `git push`
+
+---
