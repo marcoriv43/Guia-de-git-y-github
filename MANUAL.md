@@ -76,3 +76,64 @@ Es recomendable que estos acuerdos se escriban en algún documento compartido o 
 Cuando el equipo se organiza bien, el trabajo fluye de manera más natural y se reducen considerablemente los conflictos internos.
 
 ---
+
+## Gestión del tiempo
+
+La gestión del tiempo es una habilidad fundamental en cualquier proyecto universitario. Aunque el contenido del trabajo sea bueno, si se deja todo para el final, el resultado probablemente no será el mejor. Administrar bien el tiempo permite avanzar paso a paso, revisar con calma y corregir errores antes de la entrega definitiva.
+
+### Por qué es importante gestionar el tiempo
+
+Uno de los errores más frecuentes en los trabajos grupales es pensar que todavía “hay suficiente tiempo”. Esa percepción suele hacer que el grupo avance muy poco durante los primeros días y luego tenga que correr al final para completar el documento. Cuando esto ocurre, aparecen errores de redacción, desorden en las ideas, problemas de formato y poca coordinación en la exposición oral.
+
+La gestión adecuada del tiempo permite:
+
+- Dividir el trabajo en partes pequeñas.
+- Establecer fechas internas antes de la entrega final.
+- Evitar acumulación de tareas al último momento.
+- Dar tiempo para revisar y corregir.
+- Reducir el estrés del grupo.
+- Mejorar la calidad final del documento.
+
+### División del proyecto en fases
+
+Una forma práctica de administrar el tiempo es dividir el proyecto en fases. Esto ayuda a visualizar el proceso completo y evita que el trabajo se vea como una sola tarea gigante.
+
+Un ejemplo de fases podría ser el siguiente:
+
+1. Lectura de la guía y análisis del tema.
+2. Definición del índice o estructura general.
+3. Investigación de contenido y selección de fuentes.
+4. Redacción del primer borrador.
+5. Revisión de estilo, formato y ortografía.
+6. Integración de las partes del documento.
+7. Revisión final y ajustes.
+8. Preparación de la exposición, si aplica.
+9. Entrega del documento final.
+
+Cada fase puede tener una fecha estimada de cumplimiento. Lo ideal es que estas fechas sean anteriores a la fecha oficial de entrega, para dejar un margen de corrección.
+
+### Cronograma interno
+
+El equipo puede elaborar un cronograma sencillo. No es necesario que sea muy complejo; basta con que sea claro y útil. Por ejemplo:
+
+- Día 1: reunión inicial y distribución de tareas.
+- Día 2 al 4: búsqueda de información.
+- Día 5 al 7: redacción de borradores.
+- Día 8: revisión conjunta.
+- Día 9: corrección final.
+- Día 10: preparación de la entrega.
+
+Lo importante del cronograma no es su diseño, sino que realmente se cumpla. Si surge algún imprevisto, debe ajustarse de inmediato.
+
+### Buenas prácticas para la gestión del tiempo
+
+- Comenzar a trabajar lo antes posible.
+- Evitar postergar tareas pequeñas, porque luego se acumulan.
+- Hacer avances cortos pero constantes.
+- Revisar el cronograma en cada reunión.
+- Dejar siempre tiempo para corregir errores.
+- Tener un responsable que verifique que las fechas se cumplan.
+
+Un grupo que respeta el tiempo de trabajo demuestra compromiso y madurez académica.
+
+---
