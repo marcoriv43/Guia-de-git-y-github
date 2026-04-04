@@ -310,3 +310,255 @@ Un repositorio bien estructurado ayuda a que el proyecto sea fácil de entender 
 Se busca una estructura clara que facilite el trabajo del equipo y también haga que el repositorio luzca más profesional ante cualquier revisión externa.
 
 ---
+
+## Uso de ramas
+
+Las ramas permiten trabajar en distintas partes del proyecto sin alterar directamente la versión principal. Son una de las características más importantes de Git, especialmente cuando varias personas colaboran al mismo tiempo.
+
+### Para qué sirven las ramas
+
+Una rama permite que un integrante trabaje en una copia paralela del proyecto mientras la rama principal se mantiene estable. Cuando el trabajo está listo, puede integrarse al documento principal mediante revisión.
+
+Esto ofrece varias ventajas:
+
+- Evita que los cambios de una persona afecten directamente el trabajo de otra.
+- Permite revisar antes de mezclar el contenido.
+- Reduce el riesgo de errores en la versión principal.
+- Facilita la organización por secciones o responsabilidades.
+
+### Estrategia simple para este proyecto
+
+Como el grupo es pequeño, no hace falta crear demasiadas ramas. Una estrategia práctica podría ser:
+
+- main: versión principal y estable.
+- daniel/docs: rama de trabajo general de Daniel.
+- marco/docs: rama de trabajo general de Marco.
+- release/v1.0: rama temporal para la versión final, si fuera necesario.
+
+Con esta estructura se mantiene una buena práctica sin complicar innecesariamente el proyecto.
+
+### Recomendaciones al usar ramas
+
+- Crear ramas con nombres descriptivos.
+- No trabajar directamente sobre main.
+- Subir los cambios solo cuando estén listos para revisión.
+- Fusionar ramas únicamente después de validar el contenido.
+- Eliminar las ramas que ya no se utilicen.
+
+### ¿Cómo crear y moverme por las ramas?
+
+1. Antes de crear una rama debemos asegurarnos de estar en la rama principal `main` y de tener los últimos cambios:
+
+```bash
+git checkout main
+git pull origin main
+```
+
+2. Creamos una rama nueva:
+
+```bash
+git checkout -b nombre-de-la-rama
+```
+
+3. Subimos la rama creada al repositorio:
+
+```bash
+git push -u origin daniel/docs
+```
+
+---
+
+## Uso de issues
+
+Los issues son una forma muy clara de organizar tareas dentro del repositorio. En un trabajo universitario, pueden usarse para controlar secciones pendientes, correcciones, dudas o mejoras.
+
+### Qué registrar en un issue
+
+Un issue puede contener:
+
+- El nombre de una tarea.
+- Una descripción breve.
+- Un responsable.
+- Una lista de verificación.
+- Comentarios sobre avances o problemas.
+
+### Ejemplos de uso
+
+- Crear un issue para redactar la introducción.
+- Abrir un issue para revisar la bibliografía.
+- Registrar un issue para corregir formato.
+- Crear un issue para preparar la versión final del PDF.
+
+### Buenas prácticas
+
+- Escribir títulos cortos y claros.
+- No mezclar demasiadas tareas en un solo issue si no están relacionadas.
+- Cerrar el issue cuando la tarea haya sido resuelta.
+- Usar comentarios para registrar decisiones importantes.
+
+Los issues ayudan a que el proyecto no dependa solo de la memoria del grupo, sino de una organización visible y documentada.
+
+### ¿Cómo crear un issue?
+
+1. Entrar al repositorio de GitHub y dirigirse a la sección “Issues”.
+2. Hacer clic en “New issue”.
+3. Colocar el título del issue y en la descripción indicar qué tarea se debe completar.
+4. Crear el issue.
+5. Marcarlo como completado cuando la tarea haya sido finalizada.
+
+---
+
+## Pull Requests y revisión de cambios
+
+Los Pull Requests permiten que los cambios hechos en una rama se revisen antes de incorporarlos a la rama principal. Esto es especialmente útil en trabajos grupales, porque obliga a revisar el contenido antes de darlo por terminado.
+
+### Qué hacen los Pull Requests
+
+Un Pull Request permite:
+
+- Mostrar qué cambios se hicieron.
+- Revisar la calidad del contenido.
+- Comentar observaciones antes de fusionar.
+- Aprobar o solicitar correcciones.
+
+### Flujo básico de trabajo
+
+1. Un integrante trabaja en su rama.
+2. Realiza los cambios necesarios.
+3. Sube la rama al repositorio.
+4. Abre un Pull Request hacia main.
+5. El otro integrante revisa el contenido.
+6. Si hay correcciones, se hacen antes de fusionar.
+7. Cuando todo está correcto, se integra a la rama principal.
+
+### Qué revisar antes de aprobar
+
+- Ortografía.
+- Coherencia entre secciones.
+- Cumplimiento del objetivo del manual.
+- Formato general.
+- Orden del contenido.
+- Que no haya errores de edición o secciones incompletas.
+
+La revisión entre compañeros es valiosa porque permite detectar detalles que una sola persona puede pasar por alto.
+
+## ¿Cómo hacer un Pull Request?
+
+Los Pull Requests son el corazón del trabajo colaborativo en GitHub. Permiten que una persona proponga cambios desde su rama para que otra persona los revise antes de integrarlos a la rama principal (`main`).
+
+### 🎯 Flujo básico paso a paso
+
+#### **Paso 1: Verificar que estás en tu rama correcta**
+```bash
+git branch
+# Resultado esperado:
+# * daniel/docs  <- rama actual (verde)
+#   main
+
+# Si no estás en tu rama:
+git checkout daniel/docs
+```
+
+#### **Paso 2: Hacer tus cambios**
+1. Edita `MANUAL.md` (o el archivo correspondiente)
+2. Guarda los cambios en tu editor
+
+#### **Paso 3: Preparar los cambios**
+```bash
+# Ver qué cambiaste
+git status
+
+# Agregar TODOS los cambios preparados
+git add .
+
+# Verificar que se agregaron bien
+git status
+```
+
+#### **Paso 4: Crear el commit con mensaje descriptivo**
+```bash
+git commit -m "#5 Redactar sección Git/GitHub
+- Diferencia Git vs GitHub explicada
+- 6 ventajas principales documentadas
+- Aplicación académica detallada
+- Valor formativo incluido"
+```
+
+#### **Paso 5: Subir tu rama a GitHub**
+```bash
+git push
+```
+
+#### **Paso 6: Crear Pull Request en GitHub (WEB)**
+1. **Ir a tu repositorio**
+2. **Ver banner AMARILLO** que dice:
+daniel/docs had recent pushes 1 minute ago
+Compare 1 commit
+
+++++ Create a pull request ++++
+
+3. **Te aparecerá los archivos que fueron modificados, los cuales seleccionaras que quieres que se quede"**
+4. **Completar el formulario del PR**
+5. **Click "Approve"** 
+6. **Click "Merge pull request"**
+
+---
+
+## Versionado del documento
+
+Versionar el documento significa registrar cómo ha evolucionado a lo largo del tiempo. Esto es útil porque permite saber cuál fue la primera versión, cuáles cambios se introdujeron después y cuál es la edición final.
+
+### Tags o etiquetas
+
+Cuando el manual alcance un estado estable, se puede etiquetar como una versión, por ejemplo:
+
+- v1.0
+- v1.1
+- v1.2
+
+Cada etiqueta representa una versión importante del documento.
+
+### Uso del CHANGELOG
+
+El archivo CHANGELOG.md sirve para registrar las modificaciones más relevantes. Allí se puede anotar:
+
+- Qué se añadió.
+- Qué se cambió.
+- Qué se corrigió.
+- Qué se eliminó.
+
+Esto hace que el historial del proyecto sea claro y fácil de revisar.
+
+### Ejemplo de versiones
+
+- v1.0: estructura inicial del manual.
+- v1.1: mejoras en la parte de Git y GitHub.
+- v1.2: corrección final de redacción y formato.
+
+### Cómo colocar un tag
+
+1. Colocamos el siguiente comando para crear un tag:
+
+```bash
+git tag v0.0.1 -m "Primera version"
+```
+
+2. Si queremos colocar un tag a un commit anterior:
+
+```bash
+git tag v0.0.2 <codigo del commit> -m "Segunda version"
+```
+
+3. Subimos los tags creados al repositorio:
+
+```bash
+git push --tags
+```
+
+4. Si quieres eliminar un tag:
+
+```bash
+git tag -d <nombre del tag>
+```
+
+---
