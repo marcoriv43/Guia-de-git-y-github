@@ -562,3 +562,21 @@ git tag -d <nombre del tag>
 ```
 
 ---
+
+## Breve resumen de normas APA de la UVM
+
+La Universidad Valle del Momboy establece normas formales para la elaboración y presentación de trabajos académicos. Entre los aspectos más importantes se encuentran la claridad de la redacción, el uso general de tercera persona, la correcta presentación de citas y referencias, y el respeto por la estructura formal del documento.
+
+En cuanto al formato, se exige márgenes de 2,54 cm, interlineado doble y una presentación limpia y ordenada. Los títulos y subtítulos deben estar jerarquizados de forma coherente, y las referencias bibliográficas deben organizarse alfabéticamente. Las citas textuales menores de 40 palabras se colocan dentro del párrafo entre comillas, mientras que las mayores de 40 palabras deben ir en bloque, con sangría y sin comillas.
+
+La universidad permite el uso de sistemas de citación autor-fecha o numeral, pero la modalidad elegida debe mantenerse de manera uniforme en todo el trabajo. También se recomienda cuidar la presentación de tablas, figuras, numeración de páginas y anexos, de acuerdo con los criterios institucionales establecidos.
+
+---
+
+## Recomendaciones finales
+
+Trabajar en grupo de manera efectiva requiere organización, responsabilidad y comunicación constante. No basta con dividir el contenido del trabajo; también es necesario coordinar tiempos, revisar avances y respetar los acuerdos del equipo. Cuando esto se hace correctamente, el resultado final refleja un esfuerzo mucho más sólido y profesional.
+
+El uso de Git y GitHub en trabajos universitarios es una excelente manera de llevar control de cambios, organizar tareas y colaborar de forma más estructurada. A esto se suman las herramientas de comunicación y planificación, que permiten mantener el proyecto ordenado desde el inicio hasta la entrega final.
+
+En conclusión, un buen trabajo grupal no depende solo del conocimiento técnico, sino también de la capacidad para colaborar con orden, disciplina y criterio. Si el equipo logra combinar organización, gestión del tiempo, herramientas de colaboración y buenas prácticas de versionado, tendrá muchas más posibilidades de entregar un trabajo claro, coherente y bien presentado.
