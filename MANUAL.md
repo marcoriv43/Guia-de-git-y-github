@@ -407,3 +407,176 @@ Los issues ayudan a que el proyecto no dependa solo de la memoria del grupo, sin
 5. Marcarlo como completado cuando la tarea haya sido finalizada.
 
 ---
+
+## Pull Requests y revisión de cambios
+
+Los Pull Requests permiten que los cambios hechos en una rama se revisen antes de incorporarlos a la rama principal. Esto es especialmente útil en trabajos grupales, porque obliga a revisar el contenido antes de darlo por terminado.
+
+### Qué hacen los Pull Requests
+
+Un Pull Request permite:
+
+- Mostrar qué cambios se hicieron.
+- Revisar la calidad del contenido.
+- Comentar observaciones antes de fusionar.
+- Aprobar o solicitar correcciones.
+
+### Flujo básico de trabajo
+
+1. Un integrante trabaja en su rama.
+2. Realiza los cambios necesarios.
+3. Sube la rama al repositorio.
+4. Abre un Pull Request hacia main.
+5. El otro integrante revisa el contenido.
+6. Si hay correcciones, se hacen antes de fusionar.
+7. Cuando todo está correcto, se integra a la rama principal.
+
+### Qué revisar antes de aprobar
+
+- Ortografía.
+- Coherencia entre secciones.
+- Cumplimiento del objetivo del manual.
+- Formato general.
+- Orden del contenido.
+- Que no haya errores de edición o secciones incompletas.
+
+La revisión entre compañeros es valiosa porque permite detectar detalles que una sola persona puede pasar por alto.
+
+## ¿Cómo hacer un Pull Request?
+
+Los Pull Requests son el corazón del trabajo colaborativo en GitHub. Permiten que una persona proponga cambios desde su rama para que otra persona los revise antes de integrarlos a la rama principal (`main`).
+
+### 🎯 Flujo básico paso a paso
+
+#### **Paso 1: Verificar que estás en tu rama correcta**
+```bash
+git branch
+# Resultado esperado:
+# * daniel/docs  <- rama actual (verde)
+#   main
+
+# Si no estás en tu rama:
+git checkout daniel/docs
+```
+
+#### **Paso 2: Hacer tus cambios**
+1. Edita `MANUAL.md` (o el archivo correspondiente)
+2. Guarda los cambios en tu editor
+
+#### **Paso 3: Preparar los cambios**
+```bash
+# Ver qué cambiaste
+git status
+
+# Agregar TODOS los cambios preparados
+git add .
+
+# Verificar que se agregaron bien
+git status
+```
+
+#### **Paso 4: Crear el commit con mensaje descriptivo**
+```bash
+git commit -m "#5 Redactar sección Git/GitHub
+- Diferencia Git vs GitHub explicada
+- 6 ventajas principales documentadas
+- Aplicación académica detallada
+- Valor formativo incluido"
+```
+
+#### **Paso 5: Subir tu rama a GitHub**
+```bash
+git push
+```
+
+#### **Paso 6: Crear Pull Request en GitHub (WEB)**
+1. **Ir a tu repositorio**
+2. **Ver banner AMARILLO** que dice:
+daniel/docs had recent pushes 1 minute ago
+Compare 1 commit
+
+++++ Create a pull request ++++
+
+3. **Te aparecerá los archivos que fueron modificados, los cuales seleccionaras que quieres que se quede"**
+4. **Completar el formulario del PR**
+5. **Click "Approve"** 
+6. **Click "Merge pull request"**
+
+---
+
+## Versionado del documento
+
+Versionar el documento significa registrar cómo ha evolucionado a lo largo del tiempo. Esto es útil porque permite saber cuál fue la primera versión, cuáles cambios se introdujeron después y cuál es la edición final.
+
+### Tags o etiquetas
+
+Cuando el manual alcance un estado estable, se puede etiquetar como una versión, por ejemplo:
+
+- v1.0
+- v1.1
+- v1.2
+
+Cada etiqueta representa una versión importante del documento.
+
+### Uso del CHANGELOG
+
+El archivo CHANGELOG.md sirve para registrar las modificaciones más relevantes. Allí se puede anotar:
+
+- Qué se añadió.
+- Qué se cambió.
+- Qué se corrigió.
+- Qué se eliminó.
+
+Esto hace que el historial del proyecto sea claro y fácil de revisar.
+
+### Ejemplo de versiones
+
+- v1.0: estructura inicial del manual.
+- v1.1: mejoras en la parte de Git y GitHub.
+- v1.2: corrección final de redacción y formato.
+
+### Cómo colocar un tag
+
+1. Colocamos el siguiente comando para crear un tag:
+
+```bash
+git tag v0.0.1 -m "Primera version"
+```
+
+2. Si queremos colocar un tag a un commit anterior:
+
+```bash
+git tag v0.0.2 <codigo del commit> -m "Segunda version"
+```
+
+3. Subimos los tags creados al repositorio:
+
+```bash
+git push --tags
+```
+
+4. Si quieres eliminar un tag:
+
+```bash
+git tag -d <nombre del tag>
+```
+
+---
+
+## Breve resumen de normas APA de la UVM
+
+La Universidad Valle del Momboy establece normas formales para la elaboración y presentación de trabajos académicos. Entre los aspectos más importantes se encuentran la claridad de la redacción, el uso general de tercera persona, la correcta presentación de citas y referencias, y el respeto por la estructura formal del documento.
+
+En cuanto al formato, se exige márgenes de 2,54 cm, interlineado doble y una presentación limpia y ordenada. Los títulos y subtítulos deben estar jerarquizados de forma coherente, y las referencias bibliográficas deben organizarse alfabéticamente. Las citas textuales menores de 40 palabras se colocan dentro del párrafo entre comillas, mientras que las mayores de 40 palabras deben ir en bloque, con sangría y sin comillas.
+
+La universidad permite el uso de sistemas de citación autor-fecha o numeral, pero la modalidad elegida debe mantenerse de manera uniforme en todo el trabajo. También se recomienda cuidar la presentación de tablas, figuras, numeración de páginas y anexos, de acuerdo con los criterios institucionales establecidos.
+
+---
+
+## Recomendaciones finales
+
+Trabajar en grupo de manera efectiva requiere organización, responsabilidad y comunicación constante. No basta con dividir el contenido del trabajo; también es necesario coordinar tiempos, revisar avances y respetar los acuerdos del equipo. Cuando esto se hace correctamente, el resultado final refleja un esfuerzo mucho más sólido y profesional.
+
+El uso de Git y GitHub en trabajos universitarios es una excelente manera de llevar control de cambios, organizar tareas y colaborar de forma más estructurada. A esto se suman las herramientas de comunicación y planificación, que permiten mantener el proyecto ordenado desde el inicio hasta la entrega final.
+
+En conclusión, un buen trabajo grupal no depende solo del conocimiento técnico, sino también de la capacidad para colaborar con orden, disciplina y criterio. Si el equipo logra combinar organización, gestión del tiempo, herramientas de colaboración y buenas prácticas de versionado, tendrá muchas más posibilidades de entregar un trabajo claro, coherente y bien presentado.
