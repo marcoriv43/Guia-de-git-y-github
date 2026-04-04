@@ -407,3 +407,158 @@ Los issues ayudan a que el proyecto no dependa solo de la memoria del grupo, sin
 5. Marcarlo como completado cuando la tarea haya sido finalizada.
 
 ---
+
+## Pull Requests y revisión de cambios
+
+Los Pull Requests permiten que los cambios hechos en una rama se revisen antes de incorporarlos a la rama principal. Esto es especialmente útil en trabajos grupales, porque obliga a revisar el contenido antes de darlo por terminado.
+
+### Qué hacen los Pull Requests
+
+Un Pull Request permite:
+
+- Mostrar qué cambios se hicieron.
+- Revisar la calidad del contenido.
+- Comentar observaciones antes de fusionar.
+- Aprobar o solicitar correcciones.
+
+### Flujo básico de trabajo
+
+1. Un integrante trabaja en su rama.
+2. Realiza los cambios necesarios.
+3. Sube la rama al repositorio.
+4. Abre un Pull Request hacia main.
+5. El otro integrante revisa el contenido.
+6. Si hay correcciones, se hacen antes de fusionar.
+7. Cuando todo está correcto, se integra a la rama principal.
+
+### Qué revisar antes de aprobar
+
+- Ortografía.
+- Coherencia entre secciones.
+- Cumplimiento del objetivo del manual.
+- Formato general.
+- Orden del contenido.
+- Que no haya errores de edición o secciones incompletas.
+
+La revisión entre compañeros es valiosa porque permite detectar detalles que una sola persona puede pasar por alto.
+
+## ¿Cómo hacer un Pull Request?
+
+Los Pull Requests son el corazón del trabajo colaborativo en GitHub. Permiten que una persona proponga cambios desde su rama para que otra persona los revise antes de integrarlos a la rama principal (`main`).
+
+### 🎯 Flujo básico paso a paso
+
+#### **Paso 1: Verificar que estás en tu rama correcta**
+```bash
+git branch
+# Resultado esperado:
+# * daniel/docs  <- rama actual (verde)
+#   main
+
+# Si no estás en tu rama:
+git checkout daniel/docs
+```
+
+#### **Paso 2: Hacer tus cambios**
+1. Edita `MANUAL.md` (o el archivo correspondiente)
+2. Guarda los cambios en tu editor
+
+#### **Paso 3: Preparar los cambios**
+```bash
+# Ver qué cambiaste
+git status
+
+# Agregar TODOS los cambios preparados
+git add .
+
+# Verificar que se agregaron bien
+git status
+```
+
+#### **Paso 4: Crear el commit con mensaje descriptivo**
+```bash
+git commit -m "#5 Redactar sección Git/GitHub
+- Diferencia Git vs GitHub explicada
+- 6 ventajas principales documentadas
+- Aplicación académica detallada
+- Valor formativo incluido"
+```
+
+#### **Paso 5: Subir tu rama a GitHub**
+```bash
+git push
+```
+
+#### **Paso 6: Crear Pull Request en GitHub (WEB)**
+1. **Ir a tu repositorio**
+2. **Ver banner AMARILLO** que dice:
+daniel/docs had recent pushes 1 minute ago
+Compare 1 commit
+
+++++ Create a pull request ++++
+
+3. **Te aparecerá los archivos que fueron modificados, los cuales seleccionaras que quieres que se quede"**
+4. **Completar el formulario del PR**
+5. **Click "Approve"** 
+6. **Click "Merge pull request"**
+
+---
+
+## Versionado del documento
+
+Versionar el documento significa registrar cómo ha evolucionado a lo largo del tiempo. Esto es útil porque permite saber cuál fue la primera versión, cuáles cambios se introdujeron después y cuál es la edición final.
+
+### Tags o etiquetas
+
+Cuando el manual alcance un estado estable, se puede etiquetar como una versión, por ejemplo:
+
+- v1.0
+- v1.1
+- v1.2
+
+Cada etiqueta representa una versión importante del documento.
+
+### Uso del CHANGELOG
+
+El archivo CHANGELOG.md sirve para registrar las modificaciones más relevantes. Allí se puede anotar:
+
+- Qué se añadió.
+- Qué se cambió.
+- Qué se corrigió.
+- Qué se eliminó.
+
+Esto hace que el historial del proyecto sea claro y fácil de revisar.
+
+### Ejemplo de versiones
+
+- v1.0: estructura inicial del manual.
+- v1.1: mejoras en la parte de Git y GitHub.
+- v1.2: corrección final de redacción y formato.
+
+### Cómo colocar un tag
+
+1. Colocamos el siguiente comando para crear un tag:
+
+```bash
+git tag v0.0.1 -m "Primera version"
+```
+
+2. Si queremos colocar un tag a un commit anterior:
+
+```bash
+git tag v0.0.2 <codigo del commit> -m "Segunda version"
+```
+
+3. Subimos los tags creados al repositorio:
+
+```bash
+git push --tags
+```
+
+4. Si quieres eliminar un tag:
+
+```bash
+git tag -d <nombre del tag>
+```
+
+---
