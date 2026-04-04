@@ -137,3 +137,46 @@ Lo importante del cronograma no es su diseño, sino que realmente se cumpla. Si 
 Un grupo que respeta el tiempo de trabajo demuestra compromiso y madurez académica.
 
 ---
+
+## Herramientas de colaboración
+
+Las herramientas de colaboración permiten que el trabajo del equipo sea más ágil, ordenado y transparente. Actualmente existen muchas opciones para escribir, compartir, revisar y organizar documentos de forma conjunta. Elegir las herramientas correctas puede hacer una gran diferencia en la calidad del proceso.
+
+### Herramientas para redactar documentos
+
+Algunas herramientas comunes para redactar y compartir archivos son:
+
+- Google Docs.
+- Microsoft Word compartido.
+- Google Drive.
+- OneDrive.
+
+Estas plataformas permiten que varios integrantes trabajen en el mismo documento, dejen comentarios y revisen cambios sin necesidad de enviar múltiples versiones por correo. Son especialmente útiles durante la etapa de redacción inicial.
+
+### Herramientas para comunicación
+
+Para coordinarse como equipo, también es importante contar con canales de comunicación claros. Algunas herramientas útiles son:
+
+- WhatsApp.
+- Telegram.
+- Discord.
+- Microsoft Teams.
+- Correo electrónico.
+
+No es necesario usar todas al mismo tiempo. El grupo puede elegir una principal para mensajes rápidos y otra para reuniones o comunicación formal. Lo más importante es que todos sepan dónde se discutirán los asuntos del proyecto.
+
+### Herramientas para organizar tareas
+
+Además de escribir y comunicarse, un grupo necesita hacer seguimiento de sus actividades. Para eso existen tableros de tareas, listas compartidas y plataformas de organización visual. Estas herramientas permiten ver qué está pendiente, qué está en proceso y qué ya fue terminado.
+
+Algunas ventajas de este tipo de herramientas son:
+
+- Ayudan a visualizar el avance.
+- Evitan que una tarea se olvide.
+- Permiten distribuir mejor el trabajo.
+- Hacen más fácil controlar prioridades.
+- Facilitan la revisión del progreso general.
+
+En este proyecto, GitHub también cumple esa función organizativa, ya que permite gestionar tareas mediante issues, tableros y ramas de trabajo.
+
+---
